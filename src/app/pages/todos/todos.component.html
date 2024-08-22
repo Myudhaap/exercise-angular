@@ -1,0 +1,9 @@
+<h1>{{ twoWayData }}</h1>
+
+<app-list
+  [(twoWay)]="twoWayData"
+  [todos]="[]"
+  (clickMeChange)="clickMe($event)"
+></app-list>
+
+<app-form></app-form>
